@@ -7,7 +7,7 @@
 # Blackjack Monte Carlo Simulation with Dynamic Shoe Modeling 
 
 # This project exploers blackjack strategy using Monte Carlo simulation. 
-# The model evolves from independent hands to a realistic multi-deck shoe 
+# The model evolved from independent hands to a realistic multi-deck shoe 
 # with card depletion, penetration, and reshuffling. 
 
 # The goal is to analyze expected value, variance, and risk adjusted returns 
@@ -75,8 +75,8 @@ class Hand:
         for card in self.cards:
             value = card_value(card)
             total += value
-        if card == 'A':
-            aces += 1
+            if card == 'A':
+                aces += 1
 
 
         while total > 21 and aces:
